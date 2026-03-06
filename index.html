@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Game</title>
+</head>
 
+<body>
+
+<h1>Mi juego Pokémon</h1>
+
+<button onclick="encuentro()">Buscar Pokémon</button>
+
+<p id="resultado"></p>
+
+<script>
+
+function encuentro() {
+
+let pokemon = ["Pikachu","Charmander","Bulbasaur","Squirtle"]
+
+let random = pokemon[Math.floor(Math.random()*pokemon.length)]
+
+document.getElementById("resultado").innerText =
+"¡Apareció un " + random + "!"
+
+}
+
+</script>
+
+</body>
+</html>
